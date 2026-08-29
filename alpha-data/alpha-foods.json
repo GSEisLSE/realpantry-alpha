@@ -1,0 +1,904 @@
+{
+  "version": "0.2.0-alpha",
+  "status": "heuristic_alpha_not_production_health_claims",
+  "foods": [
+    {
+      "id": "turkey_sandwich",
+      "name": "Turkey sandwich",
+      "category": "main",
+      "tags": [
+        "protein",
+        "grain"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "chicken_nuggets",
+      "name": "Chicken nuggets",
+      "category": "main",
+      "tags": [
+        "protein"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold_or_warm"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "ham_cheese_rollup",
+      "name": "Ham & cheese roll-up",
+      "category": "main",
+      "tags": [
+        "protein",
+        "dairy"
+      ],
+      "allergens": [
+        "milk"
+      ],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "beef_meatballs",
+      "name": "Beef meatballs",
+      "category": "main",
+      "tags": [
+        "protein"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "warm"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "grilled_cheese",
+      "name": "Grilled cheese",
+      "category": "main",
+      "tags": [
+        "grain",
+        "dairy"
+      ],
+      "allergens": [
+        "milk",
+        "wheat"
+      ],
+      "presentation_tags": [
+        "warm_or_cold"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "sunbutter_jam_sandwich",
+      "name": "SunButter & jam sandwich",
+      "category": "main",
+      "tags": [
+        "protein",
+        "grain"
+      ],
+      "allergens": [
+        "wheat"
+      ],
+      "presentation_tags": [
+        "cold",
+        "school_nut_free"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "bean_cheese_burrito",
+      "name": "Bean & cheese burrito",
+      "category": "main",
+      "tags": [
+        "protein",
+        "fiber",
+        "grain",
+        "dairy"
+      ],
+      "allergens": [
+        "milk"
+      ],
+      "presentation_tags": [
+        "warm_or_cold"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "hardboiled_eggs_cheese",
+      "name": "Hard-boiled eggs + cheese",
+      "category": "main",
+      "tags": [
+        "protein",
+        "dairy"
+      ],
+      "allergens": [
+        "egg",
+        "milk"
+      ],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "turkey_rollups",
+      "name": "Turkey roll-ups",
+      "category": "main",
+      "tags": [
+        "protein"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "pizza_bites",
+      "name": "Pizza bites",
+      "category": "main",
+      "tags": [
+        "grain",
+        "dairy"
+      ],
+      "allergens": [
+        "milk",
+        "wheat"
+      ],
+      "presentation_tags": [
+        "warm"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "cheese_quesadilla",
+      "name": "Cheese quesadilla",
+      "category": "main",
+      "tags": [
+        "grain",
+        "dairy"
+      ],
+      "allergens": [
+        "milk"
+      ],
+      "presentation_tags": [
+        "warm_or_cold"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "butter_parmesan_pasta",
+      "name": "Butter & parmesan pasta",
+      "category": "main",
+      "tags": [
+        "grain",
+        "dairy"
+      ],
+      "allergens": [
+        "milk",
+        "wheat"
+      ],
+      "presentation_tags": [
+        "cold_or_warm"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "peanut_butter_jam_sandwich",
+      "name": "Peanut butter & jam sandwich",
+      "category": "main",
+      "tags": [
+        "protein",
+        "grain"
+      ],
+      "allergens": [
+        "peanut",
+        "wheat"
+      ],
+      "presentation_tags": [
+        "cold",
+        "contains_nuts"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "almond_butter_jam_sandwich",
+      "name": "Almond butter & jam sandwich",
+      "category": "main",
+      "tags": [
+        "protein",
+        "grain"
+      ],
+      "allergens": [
+        "tree nut",
+        "wheat"
+      ],
+      "presentation_tags": [
+        "cold",
+        "contains_nuts"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "chicken_sausage_bites",
+      "name": "Chicken sausage bites",
+      "category": "main",
+      "tags": [
+        "protein"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold_or_warm"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "tuna_cracker_box",
+      "name": "Tuna + crackers",
+      "category": "main",
+      "tags": [
+        "protein"
+      ],
+      "allergens": [
+        "fish",
+        "wheat"
+      ],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "hummus_wrap",
+      "name": "Hummus wrap",
+      "category": "main",
+      "tags": [
+        "fiber",
+        "grain"
+      ],
+      "allergens": [
+        "sesame",
+        "wheat"
+      ],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "chickpea_pasta",
+      "name": "Chickpea pasta",
+      "category": "main",
+      "tags": [
+        "protein",
+        "fiber"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold_or_warm"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "chicken_salad_pita",
+      "name": "Chicken salad pita",
+      "category": "main",
+      "tags": [
+        "protein",
+        "grain"
+      ],
+      "allergens": [
+        "egg",
+        "wheat"
+      ],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "mini_bagel_cream_cheese",
+      "name": "Mini bagel + cream cheese",
+      "category": "main",
+      "tags": [
+        "grain",
+        "dairy"
+      ],
+      "allergens": [
+        "milk",
+        "wheat"
+      ],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "yogurt_oat_box",
+      "name": "Greek yogurt + oat box",
+      "category": "main",
+      "tags": [
+        "protein",
+        "dairy",
+        "grain"
+      ],
+      "allergens": [
+        "milk"
+      ],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "turkey_cheese_cracker_box",
+      "name": "Turkey + cheese + crackers",
+      "category": "main",
+      "tags": [
+        "protein",
+        "dairy",
+        "grain"
+      ],
+      "allergens": [
+        "milk",
+        "wheat"
+      ],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "carrots",
+      "name": "Carrot sticks",
+      "category": "veg",
+      "tags": [
+        "produce",
+        "fiber"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "cucumber",
+      "name": "Cucumber coins",
+      "category": "veg",
+      "tags": [
+        "produce"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "snap_peas",
+      "name": "Sugar snap peas",
+      "category": "veg",
+      "tags": [
+        "produce",
+        "fiber"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "bell_pepper",
+      "name": "Bell pepper strips",
+      "category": "veg",
+      "tags": [
+        "produce",
+        "vitamin_c"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "broccoli",
+      "name": "Broccoli",
+      "category": "veg",
+      "tags": [
+        "produce",
+        "fiber"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold_or_warm"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "cherry_tomatoes",
+      "name": "Cherry tomatoes",
+      "category": "veg",
+      "tags": [
+        "produce"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold",
+        "cut_age_appropriate"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "green_beans",
+      "name": "Green beans",
+      "category": "veg",
+      "tags": [
+        "produce",
+        "fiber"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold_or_warm"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "edamame",
+      "name": "Edamame",
+      "category": "veg",
+      "tags": [
+        "produce",
+        "protein"
+      ],
+      "allergens": [
+        "soy"
+      ],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "corn",
+      "name": "Corn",
+      "category": "veg",
+      "tags": [
+        "produce"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold_or_warm"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "cauliflower",
+      "name": "Cauliflower florets",
+      "category": "veg",
+      "tags": [
+        "produce",
+        "fiber"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold_or_warm"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "celery",
+      "name": "Celery sticks",
+      "category": "veg",
+      "tags": [
+        "produce"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "apple",
+      "name": "Apple slices",
+      "category": "fruit",
+      "tags": [
+        "produce",
+        "fiber"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "grapes",
+      "name": "Grapes",
+      "category": "fruit",
+      "tags": [
+        "produce"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold",
+        "cut_age_appropriate"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "strawberries",
+      "name": "Strawberries",
+      "category": "fruit",
+      "tags": [
+        "produce",
+        "vitamin_c"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "blueberries",
+      "name": "Blueberries",
+      "category": "fruit",
+      "tags": [
+        "produce"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "mandarin",
+      "name": "Mandarin",
+      "category": "fruit",
+      "tags": [
+        "produce",
+        "vitamin_c"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "watermelon",
+      "name": "Watermelon cubes",
+      "category": "fruit",
+      "tags": [
+        "produce"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "pear",
+      "name": "Pear slices",
+      "category": "fruit",
+      "tags": [
+        "produce",
+        "fiber"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "banana",
+      "name": "Banana",
+      "category": "fruit",
+      "tags": [
+        "produce"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "room_temp"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "raisins",
+      "name": "Raisins",
+      "category": "fruit",
+      "tags": [
+        "fruit",
+        "dried"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "room_temp"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "pineapple",
+      "name": "Pineapple chunks",
+      "category": "fruit",
+      "tags": [
+        "produce"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "raspberries",
+      "name": "Raspberries",
+      "category": "fruit",
+      "tags": [
+        "produce",
+        "fiber"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "mango",
+      "name": "Mango cubes",
+      "category": "fruit",
+      "tags": [
+        "produce"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "hummus",
+      "name": "Hummus",
+      "category": "other",
+      "tags": [
+        "protein",
+        "fiber"
+      ],
+      "allergens": [
+        "sesame"
+      ],
+      "presentation_tags": [
+        "cold",
+        "dip"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "cheese_stick",
+      "name": "Cheese stick",
+      "category": "other",
+      "tags": [
+        "protein",
+        "dairy"
+      ],
+      "allergens": [
+        "milk"
+      ],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "fruit_bar",
+      "name": "Fruit bar",
+      "category": "other",
+      "tags": [
+        "fruit"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "room_temp"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "fruit_gummies",
+      "name": "100% fruit gummies",
+      "category": "other",
+      "tags": [
+        "fruit"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "room_temp"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "tortilla_chips",
+      "name": "Tortilla chips",
+      "category": "other",
+      "tags": [
+        "grain"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "room_temp"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "rice_cakes",
+      "name": "Rice cakes",
+      "category": "other",
+      "tags": [
+        "grain"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "room_temp"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "popcorn",
+      "name": "Popcorn",
+      "category": "other",
+      "tags": [
+        "grain"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "room_temp"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "applesauce",
+      "name": "Unsweetened applesauce",
+      "category": "other",
+      "tags": [
+        "fruit"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "room_temp"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "crackers",
+      "name": "Crackers",
+      "category": "other",
+      "tags": [
+        "grain"
+      ],
+      "allergens": [
+        "wheat"
+      ],
+      "presentation_tags": [
+        "room_temp"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "pretzels",
+      "name": "Pretzels",
+      "category": "other",
+      "tags": [
+        "grain"
+      ],
+      "allergens": [
+        "wheat"
+      ],
+      "presentation_tags": [
+        "room_temp"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "yogurt",
+      "name": "Plain/low-added-sugar yogurt",
+      "category": "other",
+      "tags": [
+        "protein",
+        "dairy"
+      ],
+      "allergens": [
+        "milk"
+      ],
+      "presentation_tags": [
+        "cold"
+      ],
+      "alpha_seed": true
+    },
+    {
+      "id": "guacamole",
+      "name": "Guacamole",
+      "category": "other",
+      "tags": [
+        "healthy_fat"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "cold",
+        "dip"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "oat_bar",
+      "name": "Oat bar",
+      "category": "other",
+      "tags": [
+        "grain"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "room_temp"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "pumpkin_seeds",
+      "name": "Pumpkin seeds",
+      "category": "other",
+      "tags": [
+        "protein",
+        "healthy_fat"
+      ],
+      "allergens": [],
+      "presentation_tags": [
+        "room_temp"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "pita_crackers",
+      "name": "Pita crackers",
+      "category": "other",
+      "tags": [
+        "grain"
+      ],
+      "allergens": [
+        "wheat"
+      ],
+      "presentation_tags": [
+        "room_temp"
+      ],
+      "alpha_seed": false
+    },
+    {
+      "id": "whole_grain_toast",
+      "name": "Whole-grain toast",
+      "category": "other",
+      "tags": [
+        "grain",
+        "fiber"
+      ],
+      "allergens": [
+        "wheat"
+      ],
+      "presentation_tags": [
+        "room_temp"
+      ],
+      "alpha_seed": false
+    }
+  ]
+}

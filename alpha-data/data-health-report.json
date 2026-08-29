@@ -1,0 +1,23 @@
+{
+  "valid": true,
+  "errors": [],
+  "warnings": [],
+  "counts": {
+    "foods": 61,
+    "quick_seed_foods": 33,
+    "templates": 40,
+    "template_items": 160,
+    "product_candidates": 100,
+    "barcoded_product_candidates": 63,
+    "mapped_product_candidates": 40
+  },
+  "role_coverage": {
+    "main": 40,
+    "veg": 40,
+    "fruit": 40,
+    "other": 40
+  },
+  "main_coverage": 22,
+  "unmapped_products": 60,
+  "status": "alpha workflow dataset; product candidates require audit; nutrition scores are heuristic"
+}

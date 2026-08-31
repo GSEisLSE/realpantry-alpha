@@ -7,10 +7,10 @@ export function emptyState() {
   return {
     version: 3,
     household: {
-      weeklyBudget: 40,
+      weeklyBudget: null,
       preferredStores: [],
-      maxPrepMinutes: 15,
-      baselinePlanningMinutes: 30,
+      maxPrepMinutes: null,
+      baselinePlanningMinutes: null,
       valuesProfile: { organic: 2, avoidSyntheticDyes: 3, seedOilAvoidance: 0, minimalPlastic: 1 },
     },
     children: [],

@@ -22,7 +22,8 @@ function familyFit(candidate, household) {
     if ((candidate.store_tags || []).some(s => stores.includes(s))) score += 5;
     else score -= 8;
   }
-  const dailyBudget = Number(household.weeklyBudget || 0) / 5;
+  const weeklyBudget = Number(household.weeklyBudget);
+  const dailyBudget = Number.isFinite(weeklyBudget) && weeklyBudget > 0 ? weeklyBudget / 5 : 0;
   if (dailyBudget > 0) {
     if ((candidate.estimated_cost || 0) <= dailyBudget) score += 5;
     else score -= Math.min(20, ((candidate.estimated_cost - dailyBudget) / Math.max(1,dailyBudget)) * 25);
@@ -31,12 +32,17 @@ function familyFit(candidate, household) {
 }
 
 export function candidatesForHousehold(household) {
-  const maxPrep = Number(household.maxPrepMinutes || 15);
+  const rawMaxPrep=household.maxPrepMinutes;
+  const hasMaxPrep=rawMaxPrep!==null&&rawMaxPrep!==undefined&&rawMaxPrep!==''&&Number.isFinite(Number(rawMaxPrep));
+  const maxPrep=hasMaxPrep?Number(rawMaxPrep):null;
+
   return lunchCandidates.map(c => {
     let practicality = Number(c.practicality_score ?? 75);
     const prep = Number(c.prep_minutes ?? 10);
-    if (prep > maxPrep) practicality -= Math.min(35, (prep - maxPrep) * 4);
-    else practicality += Math.min(5, maxPrep - prep);
+    if (hasMaxPrep) {
+      if (prep > maxPrep) practicality -= Math.min(35, (prep - maxPrep) * 4);
+      else practicality += Math.min(5, maxPrep - prep);
+    }
     return {
       ...c,
       family_fit_score: familyFit(c, household),
